@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 20px;
+                background-image: url(backgroungi.jpg);
+                background-position: center;
+                background-size: cover;
+        }
+
+        .home-container{
+            padding-top: 40px;
+            width: 420px;
+            height: 550px;
+            border-radius: 8px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            background-color: white;
+            opacity: 80%;
+        }
+
+        .story-container {
+            margin-left: 15px ;
+            display:flex;
+            flex-direction:row;
+           justify-content: center;
+        }
+
+        .story {
+            width: 70px;
+            height: 70px;
+            padding: 5px;
+            border-radius: 50%;
+        }
+
+        .user-container {
+            display:flex;
+            flex-direction:row;
+            padding-left: 32px; 
+        }
+
+
+        .users {
+            display:flex;
+            margin-right: 27px;
+            margin-top: 1px;
+            
+        }
+
+        .profile-details{
+            display:flex;
+            flex-direction:row;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #profile-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            padding: 0px;
+            margin-top: 2px;
+        }
+
+        #username{
+            margin-left: 7px;
+            font-size: 19px;
+        }
+        
+        .postim {
+            width: 320px;
+            border: 2px solid black;
+            margin-top: 15px;
+        }
+
+        .butonat {
+            display: flex;
+            margin-top: 19px;
+            justify-content: center;
+        }
+
+        .like {
+            width: 80px;
+            height: 34px;
+            background-color: rgb(1, 167, 158);
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 40px;
+        }
+
+        .like:hover {
+            background-color:rgb(159, 254, 176);
+        }
+
+        .koment {
+            width: 80px;
+            height: 34px;
+            background-color:rgb(1, 167, 158);
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 40px;
+           
+        }
+
+        .dergo{
+            width: 80px;
+            height: 24px;
+            background-color: rgb(1, 167, 158);
+            border-radius: 5px;
+            cursor: pointer; 
+            border: 2px solid black;
+            text-decoration: none; 
+            color: black;
+            font-size: 15px;
+            padding-top: 5px;
+        }
+
+        #kerko {
+            width: 250px;
+            height: 27px;
+            border-radius: 5px;
+        }
+
+        #profil {
+            width: 80px;
+            height: 30px;
+            background-color:rgb(1, 167, 158);
+            border-radius: 5px;
+            cursor: pointer;
+            
+        }
+    </style>
+
+    <title>HOME</title>
+</head>
+
+<body>
+
+        <div class="home-container">
+        <div class="story-container">
+                <a><img class="story" src="pfp.png" alt="Image 1"></a>
+                <a><img class="story" src="pfp.png" alt="Image 2"></a>
+                <a><img class="story" src="pfp.png" alt="Image 3"></a>
+                <a><img class="story" src="pfp.png" alt="Image 4"></a>
+                <a href="KONTAKTE.html"><img class="story" src="msg.PNG"></a> 
+        </div>
+
+
+        <div class="user-container">
+            <p class="users">User 1</p>
+            <p class="users">User 2</p>
+            <p class="users">User 3</p>
+            <p class="users">User 4</p>
+        </div>
+
+
+    <div class="profile-details">
+    <img id="profile-img" src="pfp.png" alt="Profil">    
+        <div id="username">Fakulteti i Shkencave te Natyres</div>
+    </div>
+
+    <img class="postim" src="postim.webp" alt="Postim">
+
+    <div class="butonat">
+        <button class="like">Like</button>
+        <button class="koment" onclick="window.location.href='KOMENT.HTML'">Komento</button>
+        <a href="about:blank" target="_blank" class="dergo">Dergo</a>
+    </div>
+    <br><br>
+    <div>
+            <input type="text" id="kerko" placeholder="Kerko ...">
+            <button id="profil" onclick="window.location.href='PROFIL.html'">Profil</button>
+        </div></div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 20px;
+                background-image: url(backgroungi.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+
+            button {
+                background-color: rgb(1, 167, 158);
+                padding: 8px 25px;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 23px;
+                cursor: pointer;
+                color: black;
+            }
+
+            #container{
+                padding-top: 40px;
+                width: 370px;
+                height: 450px;
+                border-radius: 8px;
+                text-align: center;
+                color: rgb(0, 0, 0);
+                background-color: white;
+                opacity: 80%;
+            }
+        </style>
+        <title>REGJISTRIMI</title>
+    </head>
+    <body>
+        <div id="container">
+        <form action="login.html" method="post">
+            <label for="emer">Emer: </label>
+            <input type="text" id="emer" name="emer" required><br><br>
+
+            <label for="mbiemer">Mbiemer: </label>
+            <input type="text" id="mbiemer" name="mbiemer" required><br><br>
+
+            <label for="emer">Username: </label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="addemail">Email: </label>
+            <input type="text" id="addemail" name="addemail" required><br><br>
+
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="password">Confirm Password: </label>
+            <input type="password" id="password" name="password" required><br><br>
+            
+            <label for="gjinia">Gjinia: 
+                <input type="radio" name="gender" value="male">
+                M
+            </label>
+    
+            <label>
+                <input type="radio" name="gender" value="female">
+                F
+            </label>
+    
+            <br><br>
+            
+            <label for="qyteti">City: </label>
+            <select name="qyteti" id="qyteti">
+                <option value="Tirana">Tirane</option>
+                <option value="Elbasan">Elbasan</option>
+                <option value="Durres">Durres</option>
+            </select><br><br>
+          
+            <button type="submit">Ruaj</button>
+        </form></div>
+    </body>
+</html>

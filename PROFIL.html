@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            background-image: url(backgroungi.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #container{
+                padding-top: 40px;
+                width: 410px;
+                height:480px;
+                border-radius: 8px;
+                text-align: center;
+                color: rgb(0, 0, 0);
+                background-color: white;
+                opacity: 80%;
+            }
+
+        .profili {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .foto-profili{
+            width: 70px;
+            height: 70px;
+            border-radius: 45%;
+            margin-left: 20px;
+            padding-right: 20px;
+        }
+
+        .followers {
+        margin-right: 30px; 
+        font-size: 17px;
+        }
+
+        .info{
+        text-align: left;
+        font-size: 17px;
+        padding-left: 29px;
+        margin-top: 15px;
+        }
+
+        .posts {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+
+        }
+
+        .postim {
+            width: 60px;
+            height: 60px;
+            margin: 10px;
+            border: 1px solid #000000;
+            padding: 5px;
+        }
+
+        .postim:hover:after{
+        content: "13/12/23";
+        font-size: 16px;
+        display: block;
+        margin-top: 2px;
+        }
+
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            width: 86px;
+            height: 40px;
+            border-radius: 5px;
+            margin:  20px;
+            cursor: pointer;
+            background-color: rgb(1, 167, 158);
+        }
+
+    </style>
+    <title>PROFIL</title>
+</head>
+
+<body>
+
+    <div id="container">
+
+    <div class="profili">
+
+        <div>
+            <img class="foto-profili" src="pfp.png" alt="Fotoja e profiit">
+        </div>
+
+        <div class="followers">123 Followers</div>
+        <div class="followers">123 Following</div>
+        </div>
+
+        <div class="info">
+    <div>FSHN</div>
+    <div >Fakulteti i Shkencave te Natyres</div>
+    </div>
+
+    <div class="posts">
+        <div class="postim"></div>
+        <div class="postim"></div>
+        <div class="postim"></div>
+        <div class="postim"></div>
+    </div>
+    <div class="posts">
+        <div class="postim"></div>
+        <div class="postim"></div>
+        <div class="postim"></div>
+        <div class="postim"></div>
+    </div>
+
+    <div class="buttons">
+        <button class="button"onclick="window.location.href='KERKIM.html'">Kerkim</button>
+        <button class="button"onclick="window.location.href='HOME.html'">Home</button>
+        <button class="button"onclick="window.location.href='PROFIL.html'">Profil</button>
+    </div></div>
+
+</body>
+
+</html>

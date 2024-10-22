@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+       Log in
+    </title> 
+
+    <link rel="stylesheet" href="SignUpStyle.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+</head>
+<body>
+
+     <h1 id="logo">CineAlb</h1>
+    <div class="square">
+
+        <br>
+        <h1 id="text"> Unlimited movies, TV shows, and more!</h1>
+        <br>
+
+        <form action="index.html" method="post" id="form">
+
+            <br>
+
+        <label for="username">Username: </label>
+        <input type="text" id="username" class="input-box" required placeholder="Enter username.."><br><br>
+
+        <label for="password">Password: </label>
+        <input type="password" id="password" class="input-box" required minlength="6" placeholder="Enter password.."><br><br><br>
+
+        <button class="button" type="submit" onclick="passUsername();" >Log in</button><br><br>
+
+        <div>New to CineAlb? 
+       <a href="SignUp.html">Sign up now.</a>
+       </div>
+    </form>
+</div>
+ 
+</body>
+
+<script>
+    function passUsername(){
+        var username = document.getElementById("username").value;
+        localStorage.setItem("user-name",username);
+        return false;
+    }
+</script>
+
+</html>

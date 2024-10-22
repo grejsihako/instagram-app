@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+         body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            background-image: url(backgroungi.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #container{
+                padding-top: 40px;
+                width: 390px;
+                height:430px;
+                border-radius: 8px;
+                text-align: center;
+                color: rgb(0, 0, 0);
+                background-color: white;
+                opacity: 80%;
+            }
+
+        #search {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            padding-bottom: 25px;
+        }
+
+        #search-box {
+            height: 30px;
+            width: 250px;
+            border-radius: 5px;
+            margin-right: 4px;
+
+        }
+
+        #search-button {
+            margin-left: 4px;
+            height: 33px;
+            width: 70px;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: rgb(1, 167, 158);
+        }
+
+        .video-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .video {
+            padding: 5px;
+            height: 110px;
+            width: 170px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .button {
+            height: 35px;
+            width: 70px;
+            border-radius: 5px;
+            margin: 10px;
+            cursor: pointer;
+            background-color: rgb(1, 167, 158);
+        }
+
+    </style>
+    <title>KERKIM</title>
+</head>
+
+<body>
+
+    <div id="container">
+    <div id="search">
+        <input type="text" id="search-box">
+        <button id="search-button">Kerko</button>
+    </div>
+
+    <div class="video-container">
+        <video class="video" width="230" height="150" controls>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <video class="video"controls>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        </div>
+
+        <div class="video-container">
+        <video class="video" controls>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <video class="video" controls>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="button-container">
+        <button class="button" onclick="window.location.href='HOME.html'">Home</button>
+        <button class="button" onclick="window.location.href='PROFIL.html'">Profil</button>
+    </div></div>
+
+</body>
+
+</html>
+
+
+
+</body>
+
+</html>

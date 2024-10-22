@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        body {
+            display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 17px;
+                background-image: url(backgroungi.jpg);
+                background-position: center;
+                background-size: cover;
+        }
+        #container{
+                padding-top: 40px;
+                width: 370px;
+                height: 380px;
+                border-radius: 8px;
+                text-align: center;
+                color: rgb(0, 0, 0);
+                background-color: white;
+                opacity: 80%;
+            }
+
+            .profile-details{
+            display:flex;
+            flex-direction:row;
+            align-items: center;
+            margin-left: 25px;
+
+        }
+
+        #profile-img {
+            width: 50;
+            height: 50px;
+            border-radius: 50%;
+            padding: 5px;
+            margin-top: 2px;
+        }
+
+        #username{
+            margin-left: 7px;
+        }
+        
+        .postim {
+            width: 300px;
+            border: 2px solid black;
+            margin-top: 15px;
+        }
+
+
+
+        #koment {
+            width: 270px;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+
+    
+    </style>
+    <title>KOMENT</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <div class="profile-details">
+            <img id="profile-img" src="pfp.png" alt="Profil">    
+                <div id="username">Fakulteti i Shkencave te Natyres</div>
+            </div>
+        
+            <img class="postim" src="postim.webp" alt="Postim">
+
+    <input type="text" id="koment" placeholder="Shkruani nje koment..">
+    <br><br></div>
+
+</body>
+
+</html>
